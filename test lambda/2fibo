@@ -1,0 +1,7 @@
+
+from functools import reduce
+fibonacci = lambda n: ", ".join(str(a) for a in reduce(lambda x, _: x + [x[-1] + x[-2]], range(n - 2), [0, 1][:n]))
+
+n = 10
+print(fibonacci(n))
+

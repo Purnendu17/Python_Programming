@@ -1,0 +1,1 @@
+print("AVANI".replace('A','..B..'))

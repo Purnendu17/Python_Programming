@@ -1,0 +1,8 @@
+user_input = "1st December 2024 at 1pm"
+parse_date_time = lambda s: s.split(" at ")
+date_part, time_part = parse_date_time(user_input)
+day, month, year = date_part.split()[:3]
+print(f"Year: {year}")
+print(f"Month: {month}")
+print(f"Day: {day}")
+print(f"Time: {time_part}")

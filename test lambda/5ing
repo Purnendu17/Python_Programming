@@ -1,0 +1,10 @@
+def modify_string(s):
+    if len(s) >= 3:
+        if s.endswith('ing'):
+            return s + 'ly'
+        else:
+            return s + 'ing'
+    return s
+words = ["run", "jump", "go", "singing", "play"]
+modified_words = [modify_string(word) for word in words]
+print("Modified words:", modified_words)
